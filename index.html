@@ -342,7 +342,7 @@ function spawnFruit(){
   const x = def.r + Math.random() * (W - def.r*2);
   // Launch upward from bottom
   const vy = -(H * 0.022 + Math.random() * H * 0.012);
-  const vx = (Math.random() - 0.5) * 6;
+  const vx = (Math.random() - 0.5) * 1.5;
   fruits.push({
     ...def,
     x, y: H + def.r,
@@ -361,7 +361,7 @@ function spawnBomb(){
   const W = canvas.width, H = canvas.height;
   const x = 60 + Math.random() * (W - 120);
   const vy = -(H * 0.020 + Math.random() * H * 0.010);
-  const vx = (Math.random()-0.5)*5;
+  const vx = (Math.random()-0.5)*3;
   bombs.push({
     x, y: H + 40,
     vx, vy, r: 30,
